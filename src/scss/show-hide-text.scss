@@ -1,0 +1,108 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1;
+    background: #ff9c66;
+    padding: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.wrap {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.some-list {
+    color: #ececec;
+    .some-item {
+        background: #424242;
+        padding: 20px 30px 10px;
+        position: relative;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        .item-header {
+            display: flex;
+            align-items: center;
+            line-height: 24px;
+            i {
+                font-size: 14px;
+                margin-right: 10px;
+                align-self: flex-start;
+                &:after {
+                    content: '♦'
+                }
+            }
+            .header-title {
+                font-weight: bold;
+            }
+        }
+        .item-message {
+            margin: 12px 0 20px;
+            padding: 20px 0px;
+            border-top: 1px solid #828282;
+            border-bottom: 1px solid #828282;
+            transition: .3s;
+            .my-message {
+                font-size: 14px;
+                line-height: 22px;
+                transition: .3s;
+            }
+        }
+
+    }
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #ececec;
+    &:after {
+        content: '';
+        align-self: flex-start;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-top: 6px;
+        margin-left: 10px;
+        border: 1px solid #ececec;
+        border-top: none;
+        border-right: none;
+        background: transparent;
+        transform: rotate(-45deg);
+        transform-origin: bottom;
+    }
+    &.less {
+        &:after {
+            margin-left: 7px;
+            transform: rotate(135deg);
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+}
