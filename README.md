@@ -2,6 +2,12 @@
 
 Simple jQuery plugin show/hide text  with some settings.
 
+## Demo
+
+[demo link](https://rublikfun.github.io/show-hide-text/)
+
+## Settings
+
 ```
 {
     charQty     : 250,
