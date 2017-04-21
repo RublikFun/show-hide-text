@@ -13,6 +13,7 @@ function showHideText(sSelector, options) {
     var s = this;
 
         s.container = $(sSelector);
+        s.containerH = s.container.height();
 
         s.container.each(function() {
             var content = $(this).html();
@@ -36,7 +37,7 @@ function showHideText(sSelector, options) {
 
         });
 
-        $(".morelink").click(function(event){
+        s.showHide = function(event) {
             event.preventDefault();
             if($(this).hasClass("less")) {
                 $(this).removeClass("less");
@@ -48,10 +49,12 @@ function showHideText(sSelector, options) {
             } else {
                 $(this).addClass("less");
                 $(this).html(settings.lessText);
-                
+
                 $(this).parent().prev().hide();
                 $(this).prev().fadeToggle('fast');
             }
-        });
+        }
+
+        $(".morelink").bind('click', s.showHide);
 }
 /*------------------------------------------*/

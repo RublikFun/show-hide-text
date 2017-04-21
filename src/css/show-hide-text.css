@@ -67,13 +67,11 @@ h1 {
   padding: 20px 0px;
   border-top: 1px solid #828282;
   border-bottom: 1px solid #828282;
-  transition: .3s;
 }
 
 .some-list .some-item .item-message .my-message {
   font-size: 14px;
   line-height: 22px;
-  transition: .3s;
 }
 
 .morecontent span {
